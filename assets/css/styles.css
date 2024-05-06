@@ -1,4 +1,5 @@
 * {
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
@@ -6,39 +7,42 @@
 .containerPage {
     display: flex;
     flex-wrap: wrap;
-    background-color: blue;
+    background-color: rgba(128, 128, 128, 0.064);
 }
 
 .topBox {
     width: 100vw;
     height: 15vh;
-    background-color: red;
-    /* border-bottom: 2px solid black; */
+    border-bottom: .3vh solid black;
 }
 
 .spaceBetween {
     width: 100vw;
-    height: 2vh;
-    background-color: orange;
-    /* border-bottom: 2px solid black; */
+    height: 1vh;
+    border-bottom: .3vh solid black;
 }
 
 .leftBox {
-    width: 49.5vw;
-    height: 83vh;
-    background-color: pink;
-    /* border-right: 2px solid black; */
+    width: 49.75vw;
+    height: 84vh;
+    border-right: .3vw solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 39.45vw;
+    height: 64vh;
 }
 
 .spaceBetween2 {
-    width: 2vh;
-    height: 83vh;
-    background-color: blueviolet;
+    width: .5vw;
+    height: 84vh;
 }
 .rightBox {
-    width: 49.5vw;
-    height: 83vh;
-    background-color: bisque;
-    /* border-left: 2px solid black; */
+    width: 49.75vw;
+    height: 84vh;
+    border-left: .3vw solid black;
 }
 

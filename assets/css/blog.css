@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.containerPage {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topBox {
+    width: 100vw;
+    height: 15vh;
+    border-bottom: .3vh solid black;
+}
+
+.spaceBetween {
+    width: 100vw;
+    height: 1vh;
+    border-bottom: .3vh solid black;
+}
