@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.containerPage {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+}
+
+.topBox {
+    width: 100vw;
+    height: 15vh;
+    background-color: red;
+    /* border-bottom: 2px solid black; */
+}
+
+.spaceBetween {
+    width: 100vw;
+    height: 2vh;
+    background-color: orange;
+    /* border-bottom: 2px solid black; */
+}
+
+.leftBox {
+    width: 49.5vw;
+    height: 83vh;
+    background-color: pink;
+    /* border-right: 2px solid black; */
+}
+
+.spaceBetween2 {
+    width: 2vh;
+    height: 83vh;
+    background-color: blueviolet;
+}
+.rightBox {
+    width: 49.5vw;
+    height: 83vh;
+    background-color: bisque;
+    /* border-left: 2px solid black; */
+}
+
