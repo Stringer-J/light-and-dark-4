@@ -7,13 +7,28 @@
 .containerPage {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(128, 128, 128, 0.064);
 }
 
 .topBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100vw;
     height: 15vh;
     border-bottom: .3vh solid black;
+}
+
+#button {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    width: 10vw;
+    height: 10vh;
+    background-color: aqua;
+}
+
+#button:hover {
+    cursor: pointer;
 }
 
 .spaceBetween {
@@ -32,8 +47,10 @@
 }
 
 img {
-    width: 39.45vw;
+    width: 35vw;
     height: 64vh;
+    border: 2px solid black;
+    border-radius: 50%;
 }
 
 .spaceBetween2 {
@@ -46,3 +63,25 @@ img {
     border-left: .3vw solid black;
 }
 
+
+
+
+.darkMode .containerPage {
+    background-color: rgba(0, 0, 0, 0.831);
+}
+
+.darkMode .topBox {
+    border-bottom: .3vh solid white;
+}
+
+.darkMode .spaceBetween {
+    border-bottom: .3vh solid white;
+}
+
+.darkMode .leftBox {
+    border-right: .3vw solid white;
+}
+
+.darkMode .rightBox {
+    border-left: .3vw solid white;
+}
