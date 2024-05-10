@@ -22,12 +22,24 @@
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     border-left: 2px solid black;
-    width: 10vw;
-    height: 10vh;
-    background-color: aqua;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 5vw;
+    height: 5vh;
+    background-color: orange;
 }
 
-#button:hover {
+#button2 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 5px;
+    width: 90%;
+    height: 5vh;
+    background-color: orange;
+}
+
+#button, #button2:hover {
     cursor: pointer;
 }
 
@@ -35,6 +47,12 @@
     width: 100vw;
     height: 1vh;
     border-bottom: .3vh solid black;
+}
+
+.containerPage2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
 }
 
 .leftBox {
@@ -51,6 +69,15 @@ img {
     height: 64vh;
     border: 2px solid black;
     border-radius: 50%;
+    z-index: 0;
+}
+
+.circleWords {
+    z-index: 1;
+    position: absolute;
+    font-size: 65px;
+    color: white;
+    -webkit-text-stroke: .75px black;
 }
 
 .spaceBetween2 {
@@ -58,13 +85,30 @@ img {
     height: 84vh;
 }
 .rightBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     width: 49.75vw;
     height: 84vh;
     border-left: .3vw solid black;
 }
 
+.inputBox {
+    width: 90%;
+    height: 5vh;
+    border: 2px solid black;
+    padding: 5px;
+}
 
+.inputBox2 {
+    width: 90%;
+    height: 20vh;
+    border: 2px solid black;
+    padding: 5px;
+}
 
+/* Dark mode styling */
 
 .darkMode .containerPage {
     background-color: rgba(0, 0, 0, 0.831);
@@ -84,4 +128,12 @@ img {
 
 .darkMode .rightBox {
     border-left: .3vw solid white;
+}
+
+.darkMode h1 {
+    color: white;
+}
+
+.darkMode h3 {
+    color: white;
 }
