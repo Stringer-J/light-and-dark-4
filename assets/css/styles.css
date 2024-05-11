@@ -7,6 +7,7 @@
 .containerPage {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(237, 236, 236);
 }
 
 .topBox {
@@ -94,6 +95,12 @@ img {
     border-left: .3vw solid black;
 }
 
+.rightBox2 {
+    display: flex;
+    align-items: flex-start;
+    width: 90%;
+}
+
 .inputBox {
     width: 90%;
     height: 5vh;
@@ -102,6 +109,13 @@ img {
 }
 
 .inputBox2 {
+    width: 90%;
+    height: 5vh;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.inputBox3 {
     width: 90%;
     height: 20vh;
     border: 2px solid black;
