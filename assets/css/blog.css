@@ -15,11 +15,16 @@
 /* creates the header box for the page */
 .topBox {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 10vh;
     border-bottom: .3vh solid black;
+}
+
+/* adds left margin to the h1 'My First Blog' text */
+.topBox h1 {
+    margin-left: 20px;
 }
 
 /* creates the dark/light button */
@@ -34,8 +39,19 @@
     background-color: orange;
 }
 
+#button3 {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 5vw;
+    height: 5vh;
+    background-color: orange;
+}
+
 /* changes cursor when hovering over dark/light button */
-#button:hover {
+#button, #button3:hover {
     cursor: pointer;
 }
 

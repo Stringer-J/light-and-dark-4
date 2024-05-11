@@ -1,5 +1,6 @@
 const button = document.getElementById('button');
 const button2 = document.getElementById('button2');
+
 const form = document.getElementById('form');
 const page = document.querySelector('body');
 
@@ -30,4 +31,8 @@ button2.addEventListener('click', function (event) {
 
     console.log(objectInfo);
 
-})
+    localStorage.setItem('objectInfo', JSON.stringify(objectInfo));
+
+     window.location.href = 'blog.html';
+});
+
