@@ -1,22 +1,86 @@
+/* removes padding and margin for everything, adds border box to account for border spacing */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* creates a container for the page */
 .containerPage {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(237, 236, 236);
 }
 
+/* creates the header box for the page */
 .topBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     border-bottom: .3vh solid black;
 }
 
+/* creates the dark/light button */
+#button {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-radius: 5px;
+    margin-right: 20px;
+    width: 5vw;
+    height: 5vh;
+    background-color: orange;
+}
+
+/* changes cursor when hovering over dark/light button */
+#button:hover {
+    cursor: pointer;
+}
+
+/* creates the space between the header and the lower box */
 .spaceBetween {
     width: 100vw;
     height: 1vh;
     border-bottom: .3vh solid black;
+}
+
+/* creates lower box for blog posts */
+.containerPage2 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 89vh;
+}
+
+/* Dark mode styling */
+/* changes background color and all black lines and text to white */
+
+.darkMode .containerPage {
+    background-color: rgba(0, 0, 0, 0.831);
+}
+
+.darkMode .topBox {
+    border-bottom: .3vh solid white;
+}
+
+.darkMode .spaceBetween {
+    border-bottom: .3vh solid white;
+}
+
+.darkMode .leftBox {
+    border-right: .3vw solid white;
+}
+
+.darkMode .rightBox {
+    border-left: .3vw solid white;
+}
+
+.darkMode h1 {
+    color: white;
+}
+
+.darkMode h3 {
+    color: white;
 }

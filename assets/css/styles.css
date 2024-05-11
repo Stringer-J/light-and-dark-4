@@ -1,24 +1,28 @@
+/* removes padding and margin for everything, adds border box to account for border spacing */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* creates a container for the page */
 .containerPage {
     display: flex;
     flex-wrap: wrap;
     background-color: rgb(237, 236, 236);
 }
 
+/* creates the header box for the page */
 .topBox {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
-    height: 15vh;
+    height: 10vh;
     border-bottom: .3vh solid black;
 }
 
+/* creates the dark/light button */
 #button {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -30,6 +34,7 @@
     background-color: orange;
 }
 
+/* creates the submit button */
 #button2 {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
@@ -40,31 +45,36 @@
     background-color: orange;
 }
 
+/* changes the cursor when hovering over either of the buttons */
 #button, #button2:hover {
     cursor: pointer;
 }
 
+/* creates the space between the header and the lower boxes */
 .spaceBetween {
     width: 100vw;
     height: 1vh;
     border-bottom: .3vh solid black;
 }
 
+/* creates container for lower boxes, otherwise I was getting wrap issues */
 .containerPage2 {
     display: flex;
     justify-content: center;
     width: 100vw;
 }
 
+/* creates the left box with the image */
 .leftBox {
     width: 49.75vw;
-    height: 84vh;
+    height: 89vh;
     border-right: .3vw solid black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* formats all the images on the page, which in this case is just one image */
 img {
     width: 35vw;
     height: 64vh;
@@ -73,6 +83,7 @@ img {
     z-index: 0;
 }
 
+/* puts words on top of the circle image */
 .circleWords {
     z-index: 1;
     position: absolute;
@@ -81,33 +92,38 @@ img {
     -webkit-text-stroke: .75px black;
 }
 
+/* creates the space between the left and right boxes */
 .spaceBetween2 {
     width: .5vw;
-    height: 84vh;
+    height: 89vh;
 }
 
+/* creates the right box that houses the form */
 .rightBox {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 49.75vw;
-    height: 84vh;
+    height: 89vh;
     border-left: .3vw solid black;
 }
 
+/* formats the form */
 #form {
-    width: 90%;
+    width: 100%;
     text-align: center;
 }
 
+/* formats the h3 tags within the form */
 #form h3 {
     text-align: left;
     margin-left: 5%;
-    margin-bottom: .5%;
-    margin-top: .5%;
+    margin-bottom: .75%;
+    margin-top: .75%;
 }
 
+/* formats text input box for user and title */
 .inputBox {
     width: 90%;
     height: 5vh;
@@ -115,6 +131,7 @@ img {
     padding: 5px;
 }
 
+/* formats a larger text input box for content */
 .inputBox2 {
     width: 90%;
     height: 15vh;
@@ -123,6 +140,7 @@ img {
 }
 
 /* Dark mode styling */
+/* changes background color and all black lines and text to white */
 
 .darkMode .containerPage {
     background-color: rgba(0, 0, 0, 0.831);
