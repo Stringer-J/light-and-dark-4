@@ -18,20 +18,16 @@
         </div>
         <div class="spaceBetween2"></div>
         <div class="rightBox">
-            <h1>What's on your mind?</h1><br><br>
-            <div class="rightBox2">
+            <form id="form">
+                <h1>What's on your mind?</h1><br>
                 <h3>Username</h3>
-            </div><br>
-            <input type="text" class="inputBox" placeholder="Enter User Name"><br>
-            <div class="rightBox2">
+                <input type="text" class="inputBox" name="user" placeholder="Enter Username">
                 <h3>Title</h3>
-            </div><br>
-            <input type="text" class="inputBox2" placeholder="Enter Title"><br>
-            <div class="rightBox2">
+                <input type="text" class="inputBox" name="title" placeholder="Enter Title">
                 <h3>Content</h3>
-            </div><br>
-            <textarea class="inputBox3" rows="12" placeholder="Enter Content"></textarea><br>
-            <button id="button2">Submit</button>
+                <textarea class="inputBox2" name="content" placeholder="Enter Content"></textarea>
+                <button id="button2">Submit</button>
+            </form>
         </div>
         </div>
     </div>
@@ -41,6 +37,5 @@
 </body>
 </html>
 
-<!-- /* get rid of br tags in rightBox2 */ -->
 <!-- /* change dark/light button to sun and moon */ -->
 <!-- /* have the submit button create an object with the user input */ -->

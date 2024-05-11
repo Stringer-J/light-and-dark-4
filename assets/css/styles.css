@@ -85,6 +85,7 @@ img {
     width: .5vw;
     height: 84vh;
 }
+
 .rightBox {
     display: flex;
     justify-content: center;
@@ -95,10 +96,16 @@ img {
     border-left: .3vw solid black;
 }
 
-.rightBox2 {
-    display: flex;
-    align-items: flex-start;
+#form {
     width: 90%;
+    text-align: center;
+}
+
+#form h3 {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: .5%;
+    margin-top: .5%;
 }
 
 .inputBox {
@@ -110,14 +117,7 @@ img {
 
 .inputBox2 {
     width: 90%;
-    height: 5vh;
-    border: 2px solid black;
-    padding: 5px;
-}
-
-.inputBox3 {
-    width: 90%;
-    height: 20vh;
+    height: 15vh;
     border: 2px solid black;
     padding: 5px;
 }

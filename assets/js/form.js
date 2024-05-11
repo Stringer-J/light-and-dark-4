@@ -1,8 +1,6 @@
 const button = document.getElementById('button');
 const button2 = document.getElementById('button2');
-const inputBox = document.querySelector('.inputBox');
-const inputBox2 = document.querySelector('.inputBox2');
-const inputBox3 = document.querySelector('.inputBox3');
+const form = document.getElementById('form');
 const page = document.querySelector('body');
 
 let darkMode = false;
@@ -16,25 +14,20 @@ button.addEventListener('click', function () {
     }
 });
 
-button2.addEventListener('click', function () {
+button2.addEventListener('click', function (event) {
 
+    event.preventDefault();
 
-    let blogArray = [];
+    const User = form.elements.user.value;
+    const Title = form.elements.title.value;
+    const Content = form.elements.content.value;
 
-    const User = inputBox.value;
-    const Title = inputBox2.value;
-    let Content = inputBox3.value;
-
-    let infoObject = {
+    const objectInfo = {
         User: User,
         Title: Title,
         Content: Content
     };
 
-    blogArray.push(infoObject);
-
-    console.log(blogArray);
-
-    return;
+    console.log(objectInfo);
 
 })
