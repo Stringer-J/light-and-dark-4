@@ -5,14 +5,6 @@
     margin: 0;
 }
 
-/* creates a container for the page */
-/* .containerPage {
-    display: fixed;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(237, 236, 236);
-} */
-
 /* creates the header box for the page */
 .topBox {
     position: fixed;
@@ -23,7 +15,6 @@
     width: 100vw;
     height: 10vh;
     border-bottom: .3vh solid black;
-    background-color: brown;
     z-index: 1;
 }
 
@@ -33,15 +24,17 @@
     font-size: 40px;
 }
 
+/* changes h1 color to black, which might just be the default but I've been working on this for too long */
 h1 {
-    color: white;
-    -webkit-text-stroke: .75px black;
+    color: black;
 }
 
+/* put the text on the left side of the box */
 .topBoxL {
     order: 1;
 }
 
+/* puts the buttons on the right side of the box */
 .topBoxR {
     order: 2;
 }
@@ -56,6 +49,7 @@ h1 {
     background-color: orange;
 }
 
+/* creates the back button */
 #button3 {
     border: 2px solid black;
     border-radius: 5px;
@@ -88,10 +82,10 @@ h1 {
     width: 100vw;
     height: 83vh;
     background-color: rgb(237, 236, 236);
-    overflow-y: scroll;
-
+    overflow-y: auto;
 }
 
+/* formatting for the posts created in javascript */
 .newPost {
     position: relative;
     width: 95%;
@@ -100,9 +94,10 @@ h1 {
     border-radius: 5px;
     margin: 7px 30px 7px 30px;
     padding: 15px;
-    background-color: aquamarine;
+    background-color: white;
 }
 
+/* adds a line under the title for each post */
 .newPostLine {
     width: 100%;
     border: 1px solid black;
@@ -110,6 +105,7 @@ h1 {
     margin-bottom: 10px;
 }
 
+/* puts the user text at the bottom of each post */
 .userText {
     position: absolute;
     bottom: 10px;
@@ -129,6 +125,7 @@ h4 {
     background-color: white;
 }
 
+/* creates a box at the bottom of the page */
 .footerBox {
     position: fixed;
     bottom: 0;
@@ -138,7 +135,6 @@ h4 {
     width: 100vw;
     height: 5vh;
     border-top: .3vh solid black;
-    background-color: brown;
     z-index: 1;
 }
 
@@ -149,13 +145,13 @@ h4 {
     background-color: rgba(0, 0, 0, 0.831);
 }
 
-/* .darkMode .topBox {
-    border-bottom: .3vh solid white;
-} */
+.darkMode .topBox {
+    background-color: rgba(0, 0, 0, 0.831);
+}
 
-/* .darkMode .spaceBetween {
-    border-bottom: .3vh solid white;
-} */
+.darkMode .footerBox {
+    background-color: rgba(0, 0, 0, 0.831);
+}
 
 .darkMode .leftBox {
     border-right: .3vw solid white;
@@ -165,26 +161,6 @@ h4 {
     border-left: .3vw solid white;
 }
 
-/* .darkMode h1 {
+.darkMode h1 {
     color: white;
 }
-
-.darkMode h3 {
-    color: white;
-} */
-
-/* .darkMode .newPost {
-    border: 3px solid white;
-} */
-
-/* .darkMode p {
-    color: white;
-}
-
-.darkMode h4 {
-    color: rgba(255, 255, 255, 0.409);
-} */
-
-/* .darkMode .newPostLine {
-    border: 1px solid white;
-} */

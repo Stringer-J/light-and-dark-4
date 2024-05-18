@@ -20,7 +20,7 @@
     width: 100vw;
     height: 10vh;
     border-bottom: .3vh solid black;
-    background-color: brown;
+    background-color: white;
 }
 
 /* creates the dark/light button */
@@ -56,6 +56,7 @@
     width: 100vw;
     height: 1vh;
     border-bottom: .3vh solid black;
+    background-color: white;
 }
 
 /* creates container for lower boxes, otherwise I was getting wrap issues */
@@ -97,6 +98,7 @@ img {
 .spaceBetween2 {
     width: .5vw;
     height: 89vh;
+    background-color: white;
 }
 
 /* creates the right box that houses the form */
@@ -148,19 +150,7 @@ img {
 }
 
 .darkMode .topBox {
-    border-bottom: .3vh solid white;
-}
-
-.darkMode .spaceBetween {
-    border-bottom: .3vh solid white;
-}
-
-.darkMode .leftBox {
-    border-right: .3vw solid white;
-}
-
-.darkMode .rightBox {
-    border-left: .3vw solid white;
+    background-color: rgba(0, 0, 0, 0.831);
 }
 
 .darkMode h1 {
