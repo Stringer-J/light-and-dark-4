@@ -20,6 +20,7 @@
     width: 100vw;
     height: 10vh;
     border-bottom: .3vh solid black;
+    background-color: brown;
 }
 
 /* creates the dark/light button */

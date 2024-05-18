@@ -37,7 +37,7 @@ if (savedObjectInfo && container) {
     const userInfo = savedObjectInfo.User;
     const contentInfo = savedObjectInfo.Content;
 
-    if (userInfo) {
+    if (userInfo && titleInfo && contentInfo) {
 
     const newDiv = document.createElement('div');
     newDiv.classList.add('newPost');
@@ -61,3 +61,35 @@ if (savedObjectInfo && container) {
 
     container.appendChild(newDiv);
 }};
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const container = document.querySelector('.containerPage2');
+    let savedPosts = JSON.parse(localStorage.getItem('savedPosts')) || [];
+
+    savedPosts = savedPosts.reverse();
+
+    savedPosts.forEach(function(post) {
+        const newDiv = document.createElement('div');
+        newDiv.classList.add('newPost');
+
+        const newTitle = document.createElement('h3');
+        newTitle.textContent = post.Title;
+        newDiv.appendChild(newTitle);
+
+        const line = document.createElement('hr');
+        line.classList.add('newPostLine');
+        newDiv.appendChild(line);
+
+        const newContent = document.createElement('p');
+        newContent.textContent = post.Content;
+        newDiv.appendChild(newContent);
+
+        const newUser = document.createElement('h4');
+        newUser.classList.add('userText');
+        newUser.textContent = `Posted By: ${post.User}`;
+        newDiv.appendChild(newUser);
+
+        container.appendChild(newDiv);
+    });
+});

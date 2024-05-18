@@ -6,25 +6,36 @@
 }
 
 /* creates a container for the page */
-.containerPage {
-    display: flex;
-    flex-wrap: wrap;
+/* .containerPage {
+    display: fixed;
+    height: 100vh;
+    width: 100vw;
     background-color: rgb(237, 236, 236);
-}
+} */
 
 /* creates the header box for the page */
 .topBox {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100vw;
     height: 10vh;
     border-bottom: .3vh solid black;
+    background-color: brown;
+    z-index: 1;
 }
 
 /* adds left margin to the h1 'My First Blog' text */
 .topBox h1 {
     margin-left: 20px;
+    font-size: 40px;
+}
+
+h1 {
+    color: white;
+    -webkit-text-stroke: .75px black;
 }
 
 .topBoxL {
@@ -61,27 +72,35 @@
 
 /* creates the space between the header and the lower box */
 .spaceBetween {
+    position: fixed;
+    top:10vh;
     width: 100vw;
     height: 1vh;
     border-bottom: .3vh solid black;
+    z-index: 1;
+    background-color: white;
 }
 
 /* creates lower box for blog posts */
 .containerPage2 {
-    display: flex;
-    justify-content: center;
+    position: relative;
+    top: 11vh;
     width: 100vw;
-    height: 89vh;
+    height: 83vh;
+    background-color: rgb(237, 236, 236);
+    overflow-y: scroll;
+
 }
 
 .newPost {
     position: relative;
-    width: 100%;
-    height: 20%;
+    width: 95%;
+    height: 120px;
     border: 3px solid black;
     border-radius: 5px;
-    margin: 20px;
+    margin: 7px 30px 7px 30px;
     padding: 15px;
+    background-color: aquamarine;
 }
 
 .newPostLine {
@@ -100,20 +119,43 @@ h4 {
     color: rgba(0, 0, 0, 0.34);
 }
 
+.spaceBetween2 {
+    position: fixed;
+    bottom: 5vh;
+    width: 100vw;
+    height: 1vh;
+    border-top: .3vh solid black;
+    z-index: 1;
+    background-color: white;
+}
+
+.footerBox {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 5vh;
+    border-top: .3vh solid black;
+    background-color: brown;
+    z-index: 1;
+}
+
 /* Dark mode styling */
 /* changes background color and all black lines and text to white */
 
-.darkMode .containerPage {
+.darkMode .containerPage2 {
     background-color: rgba(0, 0, 0, 0.831);
 }
 
-.darkMode .topBox {
+/* .darkMode .topBox {
     border-bottom: .3vh solid white;
-}
+} */
 
-.darkMode .spaceBetween {
+/* .darkMode .spaceBetween {
     border-bottom: .3vh solid white;
-}
+} */
 
 .darkMode .leftBox {
     border-right: .3vw solid white;
@@ -123,26 +165,26 @@ h4 {
     border-left: .3vw solid white;
 }
 
-.darkMode h1 {
+/* .darkMode h1 {
     color: white;
 }
 
 .darkMode h3 {
     color: white;
-}
+} */
 
-.darkMode .newPost {
+/* .darkMode .newPost {
     border: 3px solid white;
-}
+} */
 
-.darkMode p {
+/* .darkMode p {
     color: white;
 }
 
 .darkMode h4 {
     color: rgba(255, 255, 255, 0.409);
-}
+} */
 
-.darkMode .newPostLine {
+/* .darkMode .newPostLine {
     border: 1px solid white;
-}
+} */
