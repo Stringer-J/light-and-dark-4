@@ -129,13 +129,15 @@ h4 {
 .footerBox {
     position: fixed;
     bottom: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* display: flex;
+    justify-content: space-between; */
+    /* align-items: center; */
     width: 100vw;
     height: 5vh;
     border-top: .3vh solid black;
     z-index: 1;
+    text-align: center;
+    font-size: 25px;
 }
 
 /* Dark mode styling */
@@ -163,4 +165,12 @@ h4 {
 
 .darkMode h1 {
     color: white;
+}
+
+.darkMode .footerBox {
+    color: white;
+}
+
+.darkMode a {
+    color: aqua;
 }

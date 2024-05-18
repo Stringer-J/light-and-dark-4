@@ -22,3 +22,5 @@ Refer to the LICENSE in the repo.
 ![darkOne](./assets/images/image-2.png)
 ![lightTwo](./assets/images/image-5.png)
 ![darkTwo](./assets/images/image-6.png)
+
+Note for grading staff: Xpert Learning Assistant was consulted for various parts of this project, though ultimately a fair amount of the code it gave ended up not being used.
